@@ -1,0 +1,33 @@
+body{
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+.color{
+    color:blue;
+    font-weight: bold;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+}
+
+.myCard{
+    border: solid 1px grey;
+    padding: 20px;
+    background-color: pink;
+    
+}
+
+.displayArea{
+    background-color:rgb(183, 184, 194);
+    margin: 20px;
+    margin-top: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn{
+    padding: 50px;
+    font-size:x-large;
+}
+
