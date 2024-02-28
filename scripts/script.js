@@ -47,8 +47,9 @@ let operatorSaved = "";
 let num1 = 0;
 let num2 = 0;
 let result = 0;
-let OnOff = false;
 
+// added an On/Off button to the calculator assignment - when calculator starts all buttons are off and can't use the calculator
+let OnOff = false;
 document.getElementById("btnbackSpace").disabled = true;
 document.getElementById("btnEqual").disabled = true;
 document.getElementById("btnClear").disabled = true;
@@ -170,16 +171,16 @@ btnDivide.addEventListener('click', function(){
 btnbackSpace.addEventListener('click', function(){
     backspace();
 });
-btnOnOff.addEventListener('click', function(){
+btnOnOff.addEventListener('click', function(){ // event listener that when the on/off button is clicked it will start using the OnOffPress function.
    OnOffPress();
 
 });
 
 
-// OnOff Funtion
+// OnOff Funtion added to the calculator
 function OnOffPress(){
-    OnOff = !OnOff;
-if(OnOff === true)  {
+    OnOff = !OnOff; // this will toggle the on and off button
+if(OnOff === true)  { //this will enable the calculator
     alert("You may now start to calculate"); 
     document.getElementById("btnbackSpace").disabled = false;
     document.getElementById("btnEqual").disabled = false;
@@ -200,9 +201,9 @@ if(OnOff === true)  {
     document.getElementById("btn1").disabled =false;
 
 }
-else{
+else{ //when clicked the calculator will be disabled - it will also reset the calculator using the resetCalc function
     resetCalc();
-    alert("your calculator is OFF!");
+    alert("your calculator is OFF!"); // added an alert - just an added fun way to incorporate what i've learned from class.
     document.getElementById("btnbackSpace").disabled = true;
     document.getElementById("btnEqual").disabled = true;
     document.getElementById("btnClear").disabled = true;
