@@ -173,7 +173,6 @@ btnbackSpace.addEventListener('click', function(){
 });
 btnOnOff.addEventListener('click', function(){ // event listener that when the on/off button is clicked it will start using the OnOffPress function.
    OnOffPress();
-
 });
 
 
@@ -231,8 +230,7 @@ updateDisplay();
 //if number entered needs to clear, press the backspace to clear one number at a time, every backspace clears
 function backspace(){
         stringNumber = stringNumber.slice(0, -1);
-        updateDisplay();
-    
+        updateDisplay();    
 }
 
 
